@@ -1,8 +1,8 @@
 var valor=200;
 function pagos(){
 
-var cantidad= parseInt(document.getElementById("cantidad").innerHTML );
-var categoria= document.getElementById("categoria").innerHTML;
+var cantidad= parseInt(document.getElementById("cantidad").value );
+var categoria= document.getElementById("categoria").value;
 var descuento;
 
  
@@ -12,7 +12,7 @@ switch (categoria) {
     descuento = 80;
     break;
 
-    case "trainee":
+    case "Trainee":
     descuento = 50;
     break;
 
@@ -23,8 +23,9 @@ switch (categoria) {
 
 var imprimeTotal =  cantidad *(valor - (valor * descuento /100) );
 
-var total = document.getElementById("total");
-total.innerHTML += imprimeTotal;
+//var total = document.getElementById("total");
+document.getElementById("total").innerHTML = imprimeTotal;
+
 }
 
 /*
