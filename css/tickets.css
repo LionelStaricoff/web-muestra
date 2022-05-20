@@ -1,0 +1,390 @@
+body{
+    margin: 0;
+ 
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.item0{grid-area: header;}
+.item1{grid-area: nav;}
+.item2{grid-area: tipo1;}
+.item3{grid-area: tipo2;}
+.item4{grid-area: tipo3;}
+.item5{grid-area: pventa;}
+.item6{grid-area: form;}
+.item7{grid-area: footer;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header  nav    nav     nav    nav    nav  '
+    ' tipo1  tipo1  tipo2  tipo2  tipo3  tipo3  '
+    'pventa pventa pventa pventa pventa pventa ' 
+    ' form   form   form  form    form   form  '
+    'footer footer footer footer footer footer';
+
+  
+}
+
+.grid-container > div{
+    text-align: center;
+  
+}
+
+.item0{
+    display: flex;
+    align-items: center;
+    background-color: dimgray;
+    justify-content: center;
+    color: white;
+  
+
+}
+
+
+
+
+
+#pcodo{
+    font-size: 90%;
+    display: inline;
+    text-align: center;
+    margin: 0 140px 0 20px;
+ 
+}
+
+#pcodo :hover{
+    color:green;
+}
+
+
+nav{
+
+    background-color: dimgray;
+    color: white;
+   
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  
+  li {
+    float: left;
+  }
+  
+
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  li a:hover {
+    background-color: grey;
+    color: rgb(151, 238, 151);
+    display: inline-block;
+    height: 3vw;
+  }
+
+#comprar-ticket{
+color: rgb(72, 247, 72);
+}
+nav ul{
+    list-style: none;
+    display: inline-block;
+
+}
+
+
+.item2{
+    padding: 10px 0px;
+}
+
+.item2a {
+    position: relative;
+     left: 39%;
+    border:solid blue 1px;
+    width: 250px;
+ 
+
+
+}
+
+.item3{
+    padding: 10px 0px;
+}
+
+.item3a {
+    position: relative;
+     left: 20%;
+    border:solid green 1px;
+    width: 250px;
+
+}
+
+.item4{
+    padding: 10px 0px;
+}
+
+.item4a {
+    position: relative;
+     left: -5%;
+    border:solid yellow 1px;
+    width: 250px;
+
+}
+
+
+form label{
+display: block;
+
+}
+
+
+
+
+ .item6{
+padding-left: 10px;
+ 
+} 
+
+.input{
+    width:37.3%;
+    height: 30px;
+    padding-left: 8px;
+}
+
+
+#correo{
+    width: 76.5%;
+    margin: 20px 0px;
+    height: 30px;
+    padding-left: 8px;
+
+}
+
+
+.formCantidadCategoria{
+    width: 39%;
+    display: inline-block;
+    /* border: solid blue 1px; */
+    margin: 0px;
+  overflow: visible; 
+}
+
+#cantidad{
+    width:96%;
+   float: right;
+   
+}
+
+
+#categoria{
+    width:100%;
+    float: right;
+    height: 2.7em;
+    padding-left: 10px;
+}
+
+.pform{
+    background: rgba(165, 165, 241, 0.842);
+    width: 50em;
+    border-radius: 5px;
+    margin-left: 110px;
+    padding-top: 10px;
+    height: 2em;
+}
+
+
+.boton{
+    width: 29.7em;
+    height: 2em;
+}
+
+
+
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(2, 2, 75);
+    margin-top: 30px;
+    height: 60px;
+   
+}
+
+
+
+footer nav ul li a{
+    margin-right: 2.5em ;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px){
+
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'header '
+        'nav    '
+        'tipo1'
+        'tipo2'
+        'tipo3'
+        'pventa '
+        ' form '
+        'footer ';
+    }
+      
+    
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 8px;
+        text-decoration: none;
+        font-size: 9px;
+      }
+
+      li a:hover {
+        background-color: grey;
+        color: rgb(151, 238, 151);
+        display: inline-block;
+        height: 3vw;
+      }
+
+
+ 
+
+
+        #pcodo{
+            font-size: 200%;
+            display: inline;
+            text-align: center;
+        
+         
+        }
+
+
+        .item2{
+            padding: 10px 0px;
+        }
+        
+        .item2a {
+            position: relative;
+             left: 20%;
+            border:solid blue 1px;
+            width: 250px;
+         
+        
+        
+        }
+        
+        .item3{
+            padding: 10px 0px;
+        }
+        
+        .item3a {
+            position: relative;
+             left: 20%;
+            border:solid green 1px;
+            width: 250px;
+        
+        }
+        
+        .item4{
+            padding: 10px 0px;
+        }
+        
+        .item4a {
+            position: relative;
+             left: 20%;
+            border:solid yellow 1px;
+            width: 250px;
+        
+        }
+        
+        #correo{
+            width: 79%;
+            margin: 20px 0px;
+            height: 30px;
+            padding-left: 8px;
+        
+        }
+
+        .formCantidadCategoria{
+            width: 38%;
+            display: inline-block;
+            margin: 0px;
+          overflow: visible; 
+        }
+     
+        #cantidad{
+            width:100%;
+           float: right;
+           
+        }
+
+
+        #categoria{
+            width:110%;
+            float: left;
+            height: 2.7em;
+            padding-left: 10px;
+        }
+
+        .pform{
+            background: rgba(165, 165, 241, 0.842);
+            width: 25em;
+            border-radius: 5px;
+            margin-left: 40px;
+        }
+
+        .boton{
+            width: 14.8em;
+            height: 2em;
+        }
+
+        #footer{
+            display: flex;
+            justify-content: space-between;
+            background: rgb(2, 2, 75);
+            margin-top: 30px;
+            height: 60px;
+           
+        }
+
+
+footer nav ul li a{
+margin-right: 0em ;
+}
+
+}
