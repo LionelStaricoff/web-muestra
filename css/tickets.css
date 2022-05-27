@@ -67,7 +67,7 @@ nav{
 
     background-color: dimgray;
     color: white;
-   
+   height: 60px;
   
 }
 
@@ -86,7 +86,7 @@ ul {
 
 
   li a {
-    display: block;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -182,7 +182,6 @@ padding-left: 10px;
 .formCantidadCategoria{
     width: 39%;
     display: inline-block;
-    /* border: solid blue 1px; */
     margin: 0px;
   overflow: visible; 
 }
@@ -201,19 +200,26 @@ padding-left: 10px;
     padding-left: 10px;
 }
 
+.contenedorPForm{
+    display: flex;
+    justify-content: center;
+}
+
+
 .pform{
     background: rgba(165, 165, 241, 0.842);
-    width: 50em;
+    width: 49.4rem;
     border-radius: 5px;
-    margin-left: 110px;
+    /* margin-left: 110px; */
     padding-top: 10px;
     height: 2em;
 }
 
 
 .boton{
-    width: 29.7em;
-    height: 2em;
+    /* width: 29.7em; */
+    height: 2.5em;
+    width: 24.5rem;
 }
 
 
@@ -263,13 +269,19 @@ footer nav ul li a{
         'footer ';
     }
       
-    
+    nav{
+
+        background-color: dimgray;
+        color: white;
+       height: 55px;
+      
+    }
 
       li a {
-        display: block;
+        display: inline-block;
         color: white;
         text-align: center;
-        padding: 14px 8px;
+        padding: 14px 6px;
         text-decoration: none;
         font-size: 9px;
       }
@@ -278,7 +290,8 @@ footer nav ul li a{
         background-color: grey;
         color: rgb(151, 238, 151);
         display: inline-block;
-        height: 3vw;
+        height: 3em;
+       
       }
 
 
@@ -361,16 +374,25 @@ footer nav ul li a{
             padding-left: 10px;
         }
 
-        .pform{
-            background: rgba(165, 165, 241, 0.842);
-            width: 25em;
-            border-radius: 5px;
-            margin-left: 40px;
+
+        .contenedorPForm{
+            display: flex;
+            justify-content: center;
         }
 
-        .boton{
-            width: 14.8em;
+        .pform{
+            background: rgba(165, 165, 241, 0.842);
+            width: 23em;
+            border-radius: 5px;
+            /* margin-left: 1.5em; */
+            padding-top: 10px;
             height: 2em;
+        }
+        
+
+        .boton{
+            width: 13.5em;
+            height: 2.6em;
         }
 
         #footer{
@@ -388,3 +410,4 @@ margin-right: 0em ;
 }
 
 }
+
