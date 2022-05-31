@@ -18,8 +18,9 @@ git merge otraRama                       (fusiona ramas secundarias a la main, d
 cat archivo                                            (muestra el contenido del archivo en la terminal)
 git reset --hard                               (resetea todos los cambios al ultimo commit)
 git chekout idComit               (regresa la informacion del comit que necesitemos, los id los vemos con el comando git log --oneline)
-
-
+git clone git@direccion
+git fetch                                        (descarga el historial de cambios desde github)
+git pull origin main                   (descarga y actualiza los archivos desde el remoto a git, luego de actualizar con fetch)
 
 
 
@@ -45,3 +46,5 @@ Developer settings
 Personal access tokens
 generate new tokens                                (colocar nombre,  tiempo de expiracion de la clave,  habilitar el alcance del repositorio y generar token)
 copiar y pegar en git la clave
+
+
