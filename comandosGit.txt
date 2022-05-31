@@ -1,0 +1,29 @@
+code .                                                         ( abre el visual studio code)
+git add archivo.estensión  archivo.estensión   (todos los necesarios)
+git status
+gite  status -s                                              (lo muestra mas resumido y facil de entender)
+git commit -m "descripsion del commit"
+git push origin main
+git push --set-upstream origin main
+ls                                                                      (muestra los archivos que hay)
+rm archivo.extensión                          (elimina el archibo, luego hay que darle commit y push)
+git restore    archivo.extensión      (recupera un archivo eliminado, luego hay que darle commit y push)
+mv        archivo    nuevoNombre      (renombra un archivo, luego hay que hacer commit y push)
+
+
+
+
+
+
+
+
+
+
+configurar git;
+git --version
+git config --global user.name     "nombre del programador"
+git config --global user.email      email@gmail.com
+git config --global core.editor "code --wait"    (configura el visual studo code)
+git config --global core.autocrlf input       (configura los espacios del codigo de git para windows reemplazamos input por   )
+git config --global -e         (muestra las configuraciones del usuario : nombre, email, editor ,etc)
+git config -h      (muestra los comandos de la consola)
